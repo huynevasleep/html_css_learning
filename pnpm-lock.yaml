@@ -23,6 +23,13 @@ importers:
       vue:
         specifier: ^3.5.33
         version: 3.5.39(typescript@6.0.3)
+    devDependencies:
+      prettier:
+        specifier: ^3.9.5
+        version: 3.9.5
+      prettier-plugin-slidev:
+        specifier: ^1.0.5
+        version: 1.0.5(prettier@3.9.5)
 
 packages:
 
@@ -1514,6 +1521,10 @@ packages:
   '@slidev/client@52.17.0':
     resolution: {integrity: sha512-lJH0iCbr9s53XK1Tk87Bd2YiwInJa4QA0UGTqy5MC/rd6jJNGAA/b7gCv0bGjtM3eAIVKUvPdBC4P4IbdtYadg==}
     engines: {node: '>=20.12.0'}
+
+  '@slidev/parser@0.47.5':
+    resolution: {integrity: sha512-KvqOEhIFuMDu8CjAsehMNKlAnnmAn2TRHiEymc3CMadid05oWa5zgTxqEyMxUl2rjWpYs3A1yDiendZsGYs3HA==}
+    engines: {node: '>=18.0.0'}
 
   '@slidev/parser@52.17.0':
     resolution: {integrity: sha512-60Nga58wmY8Z60yW9CalT9xu+U4QkyPsZ1bKoqB4pgc3QhUuxz27E554lnxgRmrIzIwV3s8GIinJCTWgH5bX5Q==}
@@ -3790,6 +3801,16 @@ packages:
 
   pptxgenjs@4.0.1:
     resolution: {integrity: sha512-TeJISr8wouAuXw4C1F/mC33xbZs/FuEG6nH9FG1Zj+nuPcGMP5YRHl6X+j3HSUnS1f3at6k75ZZXPMZlA5Lj9A==}
+
+  prettier-plugin-slidev@1.0.5:
+    resolution: {integrity: sha512-1xaKzOAX17QAcn1roUgQIAfeio3HPYYefCgzxh6Bzk+5rJJxq0I8HUhLrUyv9nCpIP6e9CDv/yDQSdEeqqRUuA==}
+    peerDependencies:
+      prettier: ^3.2.4
+
+  prettier@3.9.5:
+    resolution: {integrity: sha512-/FVl766LpUfB5vXgCYOYa0MeV/441Ia99AeICQIQFTY/Nw0roZwULcXpku5i1/m5kt/baz+s4Zogspd839HSMg==}
+    engines: {node: '>=14'}
+    hasBin: true
 
   pretty-bytes@5.6.0:
     resolution: {integrity: sha512-FFw039TmrBqFK8ma/7OL3sDz/VytdtJr044/QUJtH0wK9lb9jLq9tJyIxUwtQJHwar2BqtiA4iCWSwo9JLkzFg==}
@@ -6379,6 +6400,11 @@ snapshots:
       - utf-8-validate
       - vite
       - webpack
+
+  '@slidev/parser@0.47.5':
+    dependencies:
+      '@slidev/types': 0.47.5
+      js-yaml: 4.3.0
 
   '@slidev/parser@52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(rollup@4.62.2)(typescript@6.0.3)(vite@8.1.4(@types/node@22.20.1)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.0))':
     dependencies:
@@ -9206,6 +9232,13 @@ snapshots:
       https: 1.0.0
       image-size: 1.2.1
       jszip: 3.10.1
+
+  prettier-plugin-slidev@1.0.5(prettier@3.9.5):
+    dependencies:
+      '@slidev/parser': 0.47.5
+      prettier: 3.9.5
+
+  prettier@3.9.5: {}
 
   pretty-bytes@5.6.0: {}
 
