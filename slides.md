@@ -18,4 +18,6 @@ Từ căn bản đến nâng cao - Huy Le
 ---
 src: ./pages/slide-1.md
 ---
-
+---
+src: ./pages/slide-2.md
+---
